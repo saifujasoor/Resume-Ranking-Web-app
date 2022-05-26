@@ -23,14 +23,14 @@ Make sure you have Python, OpenCV, Flask and PIL installed on your system to run
 pip3 install -r required.txt
 ```
 
-Type the following command inside the directory on your terminal to run the project.
+- Type the following command inside the directory on your terminal to run the project.
 ```
 python3 app.py
 ```
 
-Click http://127.0.0.1:5000/ (Press CTRL+C to quit)
+- Click http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-click the login button and enter the following details
+- Click the login button and enter the following details
 ```
 Login Username :admin 
 Password : spartans
