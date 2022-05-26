@@ -1,0 +1,12 @@
+Expand existing software to meet the changing needs of our key demographics
+Develop a new software product from the ground up, staying true to our company’s core values and needs while lending your own creativity to the mix
+Focus on creating fault-tolerant programming
+Create scaleable, automated solutions for our customer base
+Establish multi-platform versions of the software package
+Write tests for existing and created code to ensure compatibility and stability
+Bachelor’s Degree in Software Engineering or Information Technology
+Extensive experience with Java, Python, C++ and other programming languages
+In-depth understanding of HTML5, CSS3 and CMSs
+Team player attitude with a willingness to lead when necessary
+Devotion to continuing education on an annual basis
+Working knowledge of SQL

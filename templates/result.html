@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="gr__getpapercss_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI based Resume screening">
+<meta name="author" content="Spartans!">
+
+
+<link rel="shortcut icon" href="" type="image/x-icon">
+
+
+
+  <title>Solution Analysts</title>
+  
+<link rel="stylesheet" href="./static/paper.css?v=1.0">
+<link rel="stylesheet" href="./static/demo.css">
+
+<script type="text/javascript" async="" src="./static/analytics.js"></script>
+<script async="" src="./static/js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109223301-1');
+</script>
+
+
+<style>
+
+.form-group textarea{
+  width: 65%;
+  height: 120px;
+}
+
+a:link, a:visited {
+  background-color: #00b3b3;
+  border-radius: 3px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+
+a:hover, a:active {
+  background-color: #008080;
+}
+
+
+body {
+    background-image: url("./static/login4.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+#upload_button {
+  display: inline-block;
+}
+#upload_button input[type=file] {
+  display:none;
+}
+
+
+</style>
+
+<script>
+
+$("#formid").submit(function(e) {
+
+	$("#formdiv").hide();
+	$("#resultdiv").show();
+	resetResult();
+
+	console.log("submit");
+   	console.log($("#formid").serialize());
+
+
+    e.preventDefault(); 
+});
+
+
+
+$("resetResult").click(function(){
+	$("#formdiv").show();
+	$("#resultdiv").hide();
+});
+
+$( document ).ready(function() {
+	$("#resultdiv").hide();
+});
+
+function resetResult(){
+	$("#result").innerHTML = "Processing....";
+}
+
+</script>
+
+
+
+
+</head>
+
+
+
+
+<body data-gr-c-s-loaded="true">
+  <div id="top" class="row site">
+    <div class="sm-12 md-8 col" style="margin-left: 17%">
+      <div style="border-radius: 15px  " class="paper">
+        <div class="demo-title">
+          <div class="row flex-center">
+            <div class="text-center">
+              <h1 style="border-bottom: 2px solid darkgrey;">Automated Resume Ranking System</h1>
+            </div>
+          </div>
+        </div>
+        <div class="to-top">
+          <a style="color:black" href="#top" class="paper-btn margin">^</a>
+        </div>
+        <div class="section">
+          
+		
+            {% if session.logged_in %}
+		<table class="table-hover">
+			<thead>
+			  <tr>
+				<th>Rank</th>
+				<th>Resume</th>
+			  </tr>
+			</thead>
+			{% for r in results :%}
+				<tbody>
+			  		<tr>
+						<td>{{r.rank+1}}</td>
+						<td><a href="{{url_for('custom_static', filename=r.filename)}}">{{r.filename}}</a></td>
+				
+			  		</tr>
+				</tbody>
+			{% endfor %}
+
+		</table>
+<br>
+          <form action="/" method="GET" style="text-align:center">
+        
+            <button type="submit">Do it again</button>
+
+          </form>
+          {% endif %}
+	</div>
+
+
+          
+      </div>
+    </div>
+
+    <div class="sm-12 md-4 col sidebar">
+</div>
+
+</div>
+
+
+
+
+</body></html>

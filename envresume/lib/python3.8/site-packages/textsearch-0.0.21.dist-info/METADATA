@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: textsearch
+Version: 0.0.21
+Summary: Find strings/words in text; convenience and C speed
+Home-page: https://github.com/kootenpv/textsearch
+Author: Pascal van Kooten
+Author-email: kootenpv@gmail.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: Utilities
+Requires-Dist: anyascii
+Requires-Dist: pyahocorasick
+
+UNKNOWN
+
+

@@ -1,0 +1,7 @@
+We are looking for a data scientist that will help us discover the information hidden in vast amounts of data, and help us make smarter decisions to deliver even better products. Your primary focus will be in applying data mining techniques, doing statistical analysis, and building high quality prediction systems integrated with our products.
+Data mining using state-of-the-art methods
+Extending company’s data with third party sources of information when needed
+Enhancing data collection procedures to include information that is relevant for building analytic systems
+Processing, cleansing, and verifying the integrity of data used for analysis
+Doing ad-hoc analysis and presenting results in a clear manner
+Creating automated anomaly detection systems and constant tracking of its performance

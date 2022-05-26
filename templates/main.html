@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="gr__getpapercss_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI based Resume screening">
+
+
+
+<link rel="shortcut icon" href="" type="image/x-icon">
+
+
+
+  <title>Solution Analysts</title>
+  
+<link rel="stylesheet" href="./static/demo.css">
+<link rel="stylesheet" href="./static/paper.css?v=2.7">
+
+<script type="text/javascript" async="" src="./static/analytics.js"></script>
+<script async="" src="./static/js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109223301-1');
+</script>
+
+
+<style>
+
+.form-group textarea{
+  width: 65%;
+  height: 120px;
+}
+
+
+body {
+    background-image: url("./static/geometry2.png");
+}
+
+#upload_button {
+  display: inline-block;
+}
+#upload_button input[type=file] {
+  display:none;
+}
+  
+
+</style>
+
+<script>
+
+$("#formid").submit(function(e) {
+
+	$("#formdiv").hide();
+	$("#resultdiv").show();
+	resetResult();
+
+	console.log("submit");
+   	console.log($("#formid").serialize());
+
+
+
+    e.preventDefault(); 
+});
+
+
+
+$("resetResult").click(function(){
+	$("#formdiv").show();
+	$("#resultdiv").hide();
+});
+
+$( document ).ready(function() {
+	$("#resultdiv").hide();
+});
+
+function resetResult(){
+	$("#result").innerHTML = "Processing....";
+}
+
+</script>
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <div id="top" class="row site">
+    <div class="sm-12 md-8 col">
+      <div class="paper">
+
+     {% if not session.logged_in %}
+     <a href="{{ url_for('login') }}">login</a>
+     {% else %}
+       <a href="{{ url_for('logout') }}">log out</a>
+       {% endif %}
+
+
+
+        <div class="demo-title">
+          <div class="row flex-center">
+            <div class="text-center">
+              <h1>Automated Resume Ranking System</h1>
+              <h3>Make your screening easier!</h3>
+            </div>
+          </div>        </div>
+        <div class="to-top">
+          <a href="#top" class="paper-btn margin">^</a>
+        </div>
+        <div class="section">
+
+            {% if session.logged_in %}
+      
+	<div id="formdiv">
+
+   <br>
+   
+   <p>
+     Select from these</p>
+   <form action = "/results" method = "POST" style="text-align:center" 
+   enctype = "multipart/form-data">
+     <select name="des">
+
+     {% for r in results :%}
+       <option value = '{{r.name}}'>{{r.name}}</option>
+     
+     {% endfor %}
+
+     </select>
+   <button type = "submit">Screen</button>
+
+
+</form>
+</div>
+
+{% endif %}
+
+
+
+
+
+
+        </div>   
+      </div>
+    </div>
+
+    
+      
+
+{% if session.logged_in %}
+<div class="sm-12 md-4 col sidebar">
+    
+    <div class="paper">
+      <h3 class="sidebar-title" style="text-align:center">
+        Search resume
+      </h3>
+      <form action = "/resultsearch" method = "POST">
+        <p>Enter a string to search <input type = "text" name = "Name" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+     </form>
+     
+{% endif %}
+
+    </div>
+    
+    
+</div>
+
+</div>
+
+
+</body></html>
