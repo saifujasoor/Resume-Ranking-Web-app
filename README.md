@@ -45,4 +45,23 @@ Password : spartans
 https://user-images.githubusercontent.com/76810003/171366007-a429bfb6-0639-47cc-9d02-6192ef820371.mp4
 
 
+## Author
+
+<table>
+<tr>
+<td>
+     <img src="https://avatars.githubusercontent.com/u/76810003?s=400&u=3de867a69316245acd6e93279367fc2a37a6dd14&v=4" width="180"/>
+     
+     Saifullah Rahimi
+  Solution Analysts-Data Science Intern
+
+<p align="center">
+<a href = "https://github.com/saifujasoor"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/saifullahrahimi/"><img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/></a>
+</p>
+</td>
+</tr> 
+  </table>
+
+
 
