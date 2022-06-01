@@ -1,6 +1,16 @@
+<!-- Links -->
+[python-shield]: https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white&style=for-the-badge
+[open-cv]: https://img.shields.io/badge/-OpenCV-red?logo=opencv&logoColor=white&style=for-the-badge
+[flask]: https://img.shields.io/badge/-Flask-black?logo=flask&logoColor=white&style=for-the-badge
+[html-shield]: https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white&style=for-the-badge
+[css-shield]: https://img.shields.io/badge/-CSS-2862E9?logo=css3&logoColor=white&style=for-the-badge
+[linkedin-shield]: https://img.shields.io/badge/-linkedin-0078B6?logo=linkedin&logoColor=white&style=for-the-badge
+[linkedin]:https://www.linkedin.com/in/saifullahrahimi/
+
 # Resume-Ranking-Web-app
 
 ### Built With
+
 ![python-shield] ![flask] ![open-cv] ![html-shield] ![css-shield] 
 
 * The frontend of the application is built using HTML, CSS and JavaScript
@@ -77,14 +87,6 @@ https://user-images.githubusercontent.com/76810003/171366007-a429bfb6-0639-47cc-
 </td>
 </tr> 
   </table>
-<!-- Links -->
-[python-shield]: https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white&style=for-the-badge
-[open-cv]: https://img.shields.io/badge/-OpenCV-red?logo=opencv&logoColor=white&style=for-the-badge
-[flask]: https://img.shields.io/badge/-Flask-black?logo=flask&logoColor=white&style=for-the-badge
-[html-shield]: https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white&style=for-the-badge
-[css-shield]: https://img.shields.io/badge/-CSS-2862E9?logo=css3&logoColor=white&style=for-the-badge
-[linkedin-shield]: https://img.shields.io/badge/-linkedin-0078B6?logo=linkedin&logoColor=white&style=for-the-badge
-[linkedin]:https://www.linkedin.com/in/saifullahrahimi/
 
 
 
