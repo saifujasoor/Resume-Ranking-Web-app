@@ -28,11 +28,21 @@ pip3 install -r required.txt
 python3 app.py
 ```
 
+
 - Click http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 - Click the login button and enter the following details
 ```
+
+
+
 Login Username :admin 
 Password : spartans
 
 ```
+# Demo
+
+https://user-images.githubusercontent.com/76810003/171366007-a429bfb6-0639-47cc-9d02-6192ef820371.mp4
+
+
+
