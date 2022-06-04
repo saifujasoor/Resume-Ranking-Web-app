@@ -42,7 +42,7 @@ Make sure you have Python, OpenCV, Flask and PIL installed on your system to run
 ## Execution guide
 - Download the contents of the repository.
 - Make sure the necessary prerequisites are installed on your system.
-- To install requirements  prerequisites of the project, simply type the following command inside the direcotry.
+- To install requirements  prerequisites of the project, simply type the following command :
 ```
 pip3 install -r required.txt
 ```
@@ -56,10 +56,8 @@ python3 app.py
 - Click http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 - Click the login button and enter the following details
+
 ```
-
-
-
 Login Username :admin 
 Password : spartans
 
